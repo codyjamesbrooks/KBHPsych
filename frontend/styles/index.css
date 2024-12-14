@@ -8,8 +8,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.site-padding {
-  @apply px-4;
+.site-container {
+  @apply px-4 md:px-8 max-w-[1100px] mx-auto;
 }
 .cta-button {
   @apply bg-cta-green text-slate px-2 py-1 font-bold;
