@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'heading': ['Newsreader', 'sans-serif'],
+      'body': ['Merriweather', 'serif'],
     },
     extend: {
       colors: {
