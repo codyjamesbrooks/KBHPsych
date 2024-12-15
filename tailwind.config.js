@@ -12,9 +12,10 @@ module.exports = {
     extend: {
       colors: {
         'slate': '#243B53',
-        'cta-green': '#65D6AD'
+        'cta-green': '#65D6AD',
+        'cta-blue': '#E6E6FF'
+        },
       },
-    },
   },
   plugins: [],
 }

@@ -9,10 +9,7 @@
 @tailwind utilities;
 
 .site-container {
-  @apply px-4 md:px-8 max-w-[1100px] mx-auto;
-}
-.cta-button {
-  @apply bg-cta-green text-slate px-2 py-1 font-bold;
+  @apply px-6 md:px-16 max-w-[1100px] mx-auto;
 }
 header nav svg path {
   @apply opacity-100 transition-all duration-700;
@@ -25,4 +22,28 @@ header.nav--open nav svg path#middle {
 }
 header.nav--open nav svg path#bottom {
   @apply -rotate-45 translate-y-1.5 -translate-x-1;
+}
+a.blue-highlight {
+  @apply transition-all duration-500 font-body;
+  background: linear-gradient(
+    to bottom,
+    #FFFFFF 0%,
+    #FFFFFF 68%,
+    #E6E6FF 68%,
+    #E6E6FF 94%,
+    #FFFFFF 94%
+  );
+}
+a.blue-highlight:hover {
+  background: linear-gradient(
+    to bottom,
+    #FFFFFF 0%,
+    #FFFFFF 72%,
+    #65D6AD50 72%,
+    #65D6AD50 98%,
+    #FFFFFF 98%
+  );
+}
+a.cta-button {
+  @apply bg-cta-green text-slate px-2 py-1 font-bold;
 }
