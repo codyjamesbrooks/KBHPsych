@@ -1,7 +1,16 @@
-<div class="site-container">
+<div class="site-container py-20">
+  <h2 class="text-center text-3xl font-heading mb-12">
+    Services Offered
+  </h2>
+  <ul class="mb-12">
+    <% collections.services.resources.each_with_index do |service, i|  %>
+      <%= render "service", service: service.data, i: i %>
+    <% end %>
+  </ul>
   <a href="/services"
-    class="float-right blue-highlight">
+    class="block w-fit mx-auto blue-highlight">
     See All Service Offerings
     <%= svg "images/arrow.svg", class: "inline-block" %>
   </a>
 </div>
+<%= render "section_seperator" %>
