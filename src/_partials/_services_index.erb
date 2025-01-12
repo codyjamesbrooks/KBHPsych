@@ -4,7 +4,7 @@
   </h2>
   <ul class="mb-12">
     <% collections.services.resources.each_with_index do |service, i|  %>
-      <%= render "service", service: service.data, i: i %>
+      <%= render "service_index", service: service.data, i: i %>
     <% end %>
   </ul>
   <a href="/services"

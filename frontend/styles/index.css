@@ -52,3 +52,8 @@ a.cta-button {
   @apply bg-cta-green text-slate px-2 py-1 font-bold;
   @apply hover:bg-[#65D6AD50] transition-all;
 }
+.md-style {
+  @apply font-body leading-7;
+
+  p { @apply mb-5; }
+}

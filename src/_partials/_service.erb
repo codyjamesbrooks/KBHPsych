@@ -1,26 +1,17 @@
-<li class="<%= [
-    "mb-20",
-    i == 1 ? 'hidden md:block' : '',
-    i == 2 ? 'hidden lg:block' : '',
-    ('hidden' if i > 2),
-  ].join(' ') %>">
-  <div class="flex flex-col md:flex-row md:gap-10 items-center">
-    <div class="<%= [
-          "bg-cover bg-center bg-no-repeat",
-          "shrink-0 w-60 h-60 lg:w-72 lg:h-72 mt-4 mb-8",
-          i.odd? ? "md:rounded-r-none md:rounded-l-full" :
-                   "md:rounded-l-none md:rounded-r-full",
-          "rounded-full lg:rounded-sm",
-      ].join(' ') %>"
-      style="background-image:url(<%= service.img.src %>"
-      aria-label="<%= service.img.alt %>">
-    </div>
-    <div class="<%= 'order-first' if i.odd?  %>">
-      <h3 class="mb-6 text-xl font-heading text-center"><%= service.title %></h3>
-      <p class="text-left">
-        <%= service.content.split(' ').first(50).join(' ') + "..."  %>
-        <a class="blue-highlight block w-fit mx-auto mt-1" href="<%= relative_url "/services##{service.slug}" %>">Read More</a>
-      </p>
-    </div>
+<li id="<%= service.slug %>"
+  class="mb-36">
+  <h2 class="mb-8 text-2xl font-heading text-center"><%= service.title %></h2>
+  <div style="background-image:url(<%= service.img.src %>"
+    aria-label="<%= service.img.alt %>"
+    class="<%= [
+      "bg-cover bg-center bg-no-repeat",
+      "block mx-auto md:inline-block clear-both shrink-0 w-60 h-60 lg:w-72 lg:h-72 mt-4 mb-8",
+      i.odd? ? "md:rounded-r-none md:rounded-l-full" :
+      "md:rounded-l-none md:rounded-r-full",
+      "rounded-full lg:rounded-sm",
+      i.odd? ? "md:float-right md:ml-8" : "md:float-left md:mr-8"
+  ].join(' ') %>"></div>
+  <div class="md-style">
+    <%= markdownify service.body %>
   </div>
 </li>
