@@ -1,3 +1,6 @@
+
+base_path: "KBH-psych"
+
 collections:
   services:
     output: false

@@ -35,6 +35,7 @@ const esbuildOptions = {
   plugins: [
     // add new plugins here...
   ],
+  publicPath: "/KBH-psych/_bridgetown/static",
   globOptions: {
     excludeFilter: /\.(dsd|lit)\.css$/
   }
