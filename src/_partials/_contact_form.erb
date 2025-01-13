@@ -1,0 +1,36 @@
+<form action="https://formspree.io/f/xrbbjgqg" method="POST">
+  <div class="relative mb-12">
+    <label class="block font-heading pl-2" for="name">
+      Full Name
+    </label>
+    <input type="string" name="name"
+      class="block w-full bg-slate-100 py-3 px-3 z-10 relative" />
+    <span class="absolute -right-1 -bottom-2 block w-full h-3 bg-cta-blue z-0"></span>
+  </div>
+
+
+  <div class="relative mb-12">
+    <label for="email" class="block font-heading pl-2">
+      Your email:
+    </label>
+    <input type="email" name="email"
+      class="block w-full bg-slate-100 py-3 px-3 relative z-10">
+    <span class="absolute -right-1 -bottom-2 block w-full h-3 bg-cta-blue z-0"></span>
+  </div>
+
+
+  <div class="relative mb-12">
+    <label class="block font-heading pl-2">
+      Your message:
+    </label>
+    <textarea rows="5"
+      class="block w-full bg-slate-100 py-3 px-3 mb-12
+        relative after:absolute after:w-full after:h-5 after:bg-cta-blue after:block after:top-20 z-50"
+      name="message"></textarea>
+    <span class="absolute -right-1 -bottom-2 block w-full h-3 bg-cta-blue z-0"></span>
+  </div>
+
+  <!-- your other form fields go here -->
+  <button class="w-full cta-button rounded-sm"
+    type="submit">Send</button>
+</form>

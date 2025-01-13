@@ -11,8 +11,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        'slate': '#243B53',
-        'gray': '#9FB3C8',
+        'slate' : {
+          100: '#F0F4F8',
+          200: '#9FB3C8',
+          300: '#243B53',
+        },
         'cta-green': '#65D6AD',
         'cta-blue': '#E6E6FF'
         },
