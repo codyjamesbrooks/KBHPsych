@@ -1,7 +1,7 @@
 <li id="<%= service.slug %>"
   class="mb-36">
   <h2 class="mb-8 text-2xl font-heading text-center"><%= service.title %></h2>
-  <div style="background-image:url(<%= service.img.src %>"
+  <div style="background-image:url(<%= relative_url service.img.src %>"
     aria-label="<%= service.img.alt %>"
     class="<%= [
       "bg-cover bg-center bg-no-repeat",
