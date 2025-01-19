@@ -1,14 +1,14 @@
 <header data-controller="openable"
   data-openable-open-class="nav--open"
-  class="group site-container py-3 flex items-center justify-between relative">
-  <a href="<%= relative_url '/' %>"><span class="font-bold">KBH</span></a>
+  class="group site-container py-5 flex items-center justify-between relative">
+  <a href="<%= relative_url '/' %>"><span class="font-bold block">KBH</span></a>
   <nav class="flex gap-4 items-center">
-    <ul class="bg-white
+    <ul class="bg-white pl-6 group-[.nav--open]:pb-6
       absolute md:static left-0 right-0 top-full
-      flex flex-col md:flex-row gap-2 md:gap-4
+      flex flex-col md:flex-row gap-4 md:items-center
       max-h-0 group-[.nav--open]:max-h-[300px] md:max-h-fit h-auto
       transition-all duration-700
-      overflow-hidden">
+      overflow-hidden md:overflow-visible">
       <li><a class="blue-highlight" href="<%= relative_url '/about' %>">About</a></li>
       <li><a class="blue-highlight" href="<%= relative_url '/services' %>">Services</a></li>
       <li><a class="blue-highlight" href="<%= relative_url '/media' %>">Media</a></li>
