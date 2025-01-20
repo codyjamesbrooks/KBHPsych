@@ -50,7 +50,8 @@ a.blue-highlight:hover {
 }
 .cta-button {
   @apply bg-cta-green text-slate-300 px-2.5 py-1.5 font-bold rounded-sm;
-  @apply hover:bg-[#65D6AD50] transition-all;
+  @apply hover:bg-slate-300 hover:rounded-sm transition-all;
+  @apply after:block
 }
 .md-style {
   @apply font-body leading-7;

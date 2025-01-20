@@ -3,14 +3,23 @@
     <img src="<%= relative_url "images/kate.jpg" %>"
       class="block w-[275px] h-[375px] mb-10 md:order-2 md:inline-block lg:block md:mr-16 lg:m-0" />
       <a href="<%= relative_url '/contact' %>"
-        class="cta-button mb-10 md:order-3 hidden md:inline-block lg:hidden" %>Request A Consultation</a>
+        class="cta-button mb-10 md:order-3 hidden md:inline-block lg:hidden relative z-20 group" %>
+        Request A Consultation
+        <span class="hidden absolute h-full w-full bg-cta-green -bottom-0.5 -right-0.5 group-hover:block transition-all -z-10"></span>
+      </a>
   </div>
   <a href="<%= relative_url '/contact' %>"
-    class="cta-button block mb-10 md:order-3 md:hidden" %>Request A Consultation</a>
+    class="cta-button block mb-10 md:order-3 md:hidden relative z-20 group" %>
+    Request A Consultation
+    <span class="hidden absolute h-full w-full bg-cta-green -bottom-0.5 -right-0.5 group-hover:block transition-all -z-10"></span>
+  </a>
   <div class="flex flex-col justify-between md:order-1 lg:w-1/2">
     <p class="mb-6">The practice of forensic psychology is complex, requiring a multidisciplinary approach and an adaptable mindset. Given the dynamic nature of the legal system, an effective forensic psychologist communicates findings to the court that reflect the present state of the legal field and are well supported by current empirical research. As a registered clinical forensic psychologist with over a decade of specialized training and applied experience, I provide expert testimony, assessment and evaluation services, and forensic consultation in the state of Colorado.</p>
     <a href="<%= relative_url '/contact' %>"
-      class="cta-button hidden lg:inline-block self-center" %>Request A Consultation</a>
+      class="cta-button hidden lg:inline-block self-center relative z-20 group" %>
+      Request A Consultation
+      <span class="hidden absolute h-full w-full bg-cta-green -bottom-0.5 -right-0.5 group-hover:block transition-all -z-10"></span>
+    </a>
   </div>
   <p class="md:order-4 lg:mt-10 mb-12">I have expertise in criminal evaluations including competency to proceed, risk assessment, criminal responsibility (e.g., sanity/mental condition), sentencing mitigation, and juvenile transfer/reverse transfer. I also have experience with civil topics, including general and neuropsychological assessment, fitness for duty evaluations, and assessment of  emotional/mental injury and malingering. For  further information or to inquire about my services please contact me today.</p>
 </div>
