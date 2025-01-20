@@ -49,7 +49,7 @@ a.blue-highlight:hover {
   );
 }
 .cta-button {
-  @apply bg-cta-green text-slate-300 px-2.5 py-2 font-bold rounded-sm;
+  @apply bg-cta-green text-slate-300 px-2.5 py-1.5 font-bold rounded-sm;
   @apply hover:bg-[#65D6AD50] transition-all;
 }
 .md-style {
