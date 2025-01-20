@@ -3,9 +3,9 @@
   <div>
     <a class="hover:underline underline-offset-1"
       href="<%= article.url %>" target="_blank">
-      <h3 class="mb-1.5 text-xl md:text-2xl font-heading"><%= article.title %></h3>
+      <h3 class="mb-1.5 text-lg md:text-xl font-heading"><%= article.title %></h3>
     </a>
-    <div class="flex flex-col">
+    <div class="flex flex-col text-base">
       <span>
         <span class="font-semibold">Authors: </span>
         <% article.authors.each do |author| %>

@@ -7,7 +7,7 @@
       <%= render "service_index", service: service.data, i: i %>
     <% end %>
   </ul>
-  <a href="/services"
+  <a href="<%= relative_url '/services' %>"
     class="block w-fit mx-auto blue-highlight">
     See All Service Offerings
     <%= svg "images/arrow.svg", class: "inline-block" %>
