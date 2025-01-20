@@ -1,0 +1,8 @@
+<div class="site-container">
+  <h2 class="font-heading text-center text-3xl mt-24 mb-16">Conference Presentations</h2>
+  <ul>
+    <% presentations.each do |presentation| %>
+      <%= render "presentation", presentation: presentation.data %>
+    <% end %>
+  </ul>
+</div>

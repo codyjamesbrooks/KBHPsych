@@ -2,5 +2,8 @@
 layout: default
 title: Publications & Media
 ---
+<h1 class="font-heading text-center text-4xl my-36"><%= page.data.title%></h1>
 
-Media Page
+<%= render 'articles', articles: collections.articles.resources %>
+<%= render 'chapters', chapters: collections.chapters.resources %>
+<%= render 'presentations', presentations: collections.presentations.resources %>

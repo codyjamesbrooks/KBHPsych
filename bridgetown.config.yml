@@ -4,3 +4,15 @@ base_path: "KBH-psych"
 collections:
   services:
     output: false
+  articles:
+    output: false
+    sort_by: order
+  chapters:
+    output: false
+    sort_by: order
+  presentations:
+    output: false
+    sort_by: year
+    sort_direction: descending
+
+

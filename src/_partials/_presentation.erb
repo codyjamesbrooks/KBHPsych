@@ -1,0 +1,19 @@
+<li class="flex items-center mb-16">
+  <img src="<%= relative_url 'images/icon-presentation.svg' %>" alt="presentation icon" class="hidden md:block md:w-20 md:h-20 mr-6" />
+  <div>
+    <h3 class="mb-1.5 text-xl md:text-2xl font-heading"><%= presentation.title %></h3>
+    <div class="flex flex-col gap-x-4 text-base md:text-lg">
+      <span>
+        <span class='font-semibold'>Presentators:</span>
+        <% presentation.presentators.each do |presentator| %>
+          <span class="<%= 'font-semibold' if presentator == 'Hanniball, K. B.' %>">
+            <%= presentator %>
+          </span>
+          <%= ', ' unless presentator == presentation.presentators.last %>
+        <% end %>
+      </span>
+      <span><span class='font-bold'>Conference:</span> <%= presentation.event %> (<%= presentation.year %>)</span>
+      <span><span class='font-bold'>Location:</span> <%= presentation.location %></span>
+    </div>
+  </div>
+</li>
