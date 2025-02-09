@@ -27,7 +27,7 @@ header.nav--open nav svg path#middle {
 header.nav--open nav svg path#bottom {
   @apply -rotate-45 translate-y-1.5 -translate-x-1;
 }
-a.blue-highlight {
+.blue-highlight {
   @apply transition-all duration-500 font-body;
   background: linear-gradient(
     to bottom,
@@ -38,7 +38,7 @@ a.blue-highlight {
     #FFFFFF 94%
   );
 }
-a.blue-highlight:hover {
+.blue-highlight:hover {
   background: linear-gradient(
     to bottom,
     #FFFFFF 0%,
