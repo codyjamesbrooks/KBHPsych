@@ -4,6 +4,7 @@ base_path: "KBH-psych"
 collections:
   services:
     output: false
+    sort_by: order
   articles:
     output: false
     sort_by: order

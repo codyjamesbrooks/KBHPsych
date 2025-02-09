@@ -3,6 +3,7 @@ title: Risk Assessment and Conditional Release Evaluations
 img:
   src: /images/services/racre.jpg
   alt: Snow covered rocky mountain being being brought into light by a sun beam
+order: 4
 body: |
   Risk assessment is concerned with the identification of individual factors that are known to exhibit association with violent, sexual, or recidivistic behaviors. While the evaluation of established risk factors can aid in predicting, managing, and mitigating an individual’s future risk, a person’s specific future risk of violence and/or recidivism also depends on situational factors that cannot be known in advance. Assessment of an individual’s risk can be conducted as a standalone evaluation, or can be embedded in a larger report (e.g., sentencing
   mitigation).
