@@ -1,9 +1,11 @@
 <header data-controller="openable"
   data-openable-open-class="nav--open"
-  class="group text-[.9rem] site-container py-3 flex items-center justify-between relative bg-white">
-  <a href="<%= relative_url '/' %>"><span class="font-bold block">KBH</span></a>
+  class="group text-[.9rem] site-container py-3.5 flex items-center justify-between relative bg-white">
+  <a href="<%= relative_url '/' %>">
+    <img src="<%= relative_url '/images/logos/png/logo.png' %>" alt="Logo" class="h-10">
+  </a>
   <nav class="flex my-auto gap-4 items-center bg-white">
-    <ul class="bg-white pl-8 group-[.nav--open]:pb-6 pt-0
+    <ul class="bg-white pl-8 group-[.nav--open]:py-6
       absolute md:static left-0 right-0 top-[99.96%] z-10
       flex flex-col md:flex-row gap-4 md:items-center
       max-h-0 group-[.nav--open]:max-h-[300px] md:max-h-fit h-auto

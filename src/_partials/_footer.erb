@@ -1,7 +1,9 @@
 <footer class="site-container w-full flex justify-between relative mt-20 pb-10">
   <div class="flex flex-col justify-between">
-    <a href="/"><span class="font-bold">KBH</span></a>
-    <a href="<%= relative_url '/contact' %>" class="cta-button relative z-20 group" %>
+    <a href="<%= relative_url '/' %>" class="mb-4">
+      <img src="<%= relative_url '/images/logos/png/logo.png' %>" alt="Logo" class="h-14">
+    </a>
+    <a href="<%= relative_url '/contact' %>" class="cta-button relative z-20 group w-fit" %>
       Contact
       <span class="hidden absolute h-full w-full bg-cta-green -bottom-0.5 -right-0.5 group-hover:block transition-all -z-10"></span>
     </a>
