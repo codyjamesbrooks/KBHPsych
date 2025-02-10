@@ -8,9 +8,8 @@
 @tailwind utilities;
 
 p {
-  @apply font-body leading-7 lg:leading-8;
+  @apply font-body leading-7 md:leading-8;
 }
-
 .site-container {
   @apply px-8 md:px-16 max-w-[1100px] mx-auto;
 }
@@ -49,13 +48,13 @@ header.nav--open nav svg path#bottom {
 }
 .cta-button {
   @apply bg-cta-green text-slate-300 px-2.5 py-1.5 font-bold rounded-sm;
-  @apply hover:bg-slate-300 hover:rounded-sm transition-all;
-  @apply after:block
+  @apply hover:shadow-[-2px_-2px_#243B53] transition-all;
 }
 .md-style {
   @apply font-body leading-7;
 
-  p { @apply mb-5; }
+  p { @apply mb-5 font-body leading-7 md:leading-8; }
+  a { @apply underline; }
 }
 .hero-image {
   background: linear-gradient(
