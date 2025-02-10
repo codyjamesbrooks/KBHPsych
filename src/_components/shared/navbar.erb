@@ -17,9 +17,8 @@
       <li><a class="blue-highlight" href="<%= relative_url '/media' %>">Media</a></li>
       <li class="whitespace-nowrap">
         <a href="<%= relative_url '/contact' %>"
-          class="cta-button relative z-20 group/cta block w-fit">
+          class="cta-button relative z-20 block w-fit">
           Contact
-          <span class="hidden absolute h-full w-full bg-cta-green -bottom-0.5 -right-0.5 group-hover/cta:block transition-all -z-10"></span>
         </a>
       </li>
     </ul>
@@ -29,9 +28,8 @@
       <%= svg "/images/menu.svg", class: "text-slate-300" %>
     </a>
     <a href="<%= relative_url '/contact' %>"
-      class="cta-button md:hidden relative z-20 group/cta">
+      class="hidden sm:block cta-button md:hidden relative z-20">
       Contact
-      <span class="hidden absolute h-full w-full bg-cta-green -bottom-0.5 -right-0.5 group-hover/cta:block transition-all -z-10"></span>
     </a>
   </nav>
 </header>
