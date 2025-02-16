@@ -31,7 +31,7 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
-          path: ./output
+          path: ./docs
 
   deploy:
     needs: build
