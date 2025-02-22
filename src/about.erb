@@ -2,7 +2,14 @@
 layout: default
 title: About
 ---
-<h1 class="font-heading text-center text-4xl mt-36"><%= page.data.title %></h1>
+<div class="hero-image w-dvw h-dvh pt-9 pb-36 text-white font-heading font-semibold overscroll-x-contain"
+  style="background-image:url('<%= relative_url "/images/mountain.jpg" %>');">
+  <div class="site-container h-full">
+    <h1 class="text-3xl lg:text-4xl text-center md:pr-12 mt-10 font-heading">
+      <%= page.data.title %>
+    </h1>
+  </div>
+</div>
 <div class="site-container pt-36 pb-12">
   <h2 class="font-heading text-left md:text-center text-2xl mb-8">Licensure and Education</h2>
   <p class="font-body mb-24 indent-6">
