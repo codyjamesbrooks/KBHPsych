@@ -2,7 +2,7 @@
   <h2 class="text-center text-3xl font-heading mb-12">
     Services Offered
   </h2>
-  <ul class="mb-12">
+  <ul class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
     <% collections.services.resources.each_with_index do |service, i|  %>
       <%= render "service_index", service: service.data, i: i %>
     <% end %>
