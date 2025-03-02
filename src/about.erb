@@ -2,15 +2,12 @@
 layout: default
 title: About
 ---
-<div class="hero-image w-dvw h-dvh pt-9 pb-36 text-white font-heading font-semibold overscroll-x-contain"
-  style="background-image:url('<%= relative_url "/images/mountain.jpg" %>');">
-  <div class="site-container h-full">
-    <h1 class="text-3xl lg:text-4xl text-center md:pr-12 mt-10 font-heading">
-      <%= page.data.title %>
-    </h1>
-  </div>
+<div class="flex flex-col md:flex-row items-center md:justify-center site-container h-full mt-36 mb-26 gap-16 lg:gap-24">
+  <h1 class="font-heading text-center text-4xl  md:order-2"><%= page.data.title %></h1>
+  <img src="<%= relative_url "images/kate.jpg" %>"
+      class="block max-w-[275px] max-h-[375px] aspect-[3/4]" />
 </div>
-<div class="site-container pt-36 pb-12">
+<div class="site-container pb-12">
   <h2 class="font-heading text-left md:text-center text-2xl mb-8">Licensure and Education</h2>
   <p class="font-body mb-24 indent-6">
     I am a licensed clinical psychologist practicing in the state of Colorado.
